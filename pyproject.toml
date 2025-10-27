@@ -17,3 +17,6 @@ features = ["pyo3/extension-module"]
 dev = [
     "maturin>=1.9.6",
 ]
+
+[tool.uv]
+cache-keys = [{file = "pyproject.toml"}, {file = "Cargo.toml"}, {file = "**/*.rs"}]
